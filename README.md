@@ -1,6 +1,6 @@
 
-# Supabasey postman
-# Integrantes
+# Supabase y postman
+## Integrantes
 
 - Velasquez Puma Brigitte Karolay
 - Ticona Nina  Valeria Abigai
