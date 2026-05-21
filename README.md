@@ -7,6 +7,18 @@
 - Lerma Ccopa Jhonatan Javier 
 
 ---
+
+## Objetivo general
+Diseñar e implementar una base de datos para una clínica oftalmológica, utilizando PostgreSQL y
+Supabase.
+## Objetivos específicos
+1. Elaborar el modelo lógico DER de la base de datos.
+2. Implementar el modelo físico mediante sentencias SQL.
+3. Crear las tablas en Supabase y validar su funcionamiento.
+Insertar datos de prueba para comprobar las relaciones entre tablas.
+4. Ejecutar consultas JOIN para obtener información combinada.
+Probar la API REST generada por Supabase usando Postman 
+
 ## Resumen
 Este proyecto consiste en el desarrollo de una base de datos usando Supabase, un servidor en la nube gratuito que opera con postgresql incluido el uso de Postman para realizar consultas a la API de Supabase
 
@@ -37,16 +49,16 @@ Laboratorio5_DAW_
 Se inició un nuevo proyecto en [Supabase](https://supabase.com), donde se provisionó una base de datos PostgreSQL en la nube. Se configuraron las credenciales y se obtuvo la **URL del proyecto** y la **API Key** para conexiones posteriores.
 
 ### 2. Creación de las tablas
-Ejecutamos el script `tablas.sql` desde el **SQL Editor** de Supabase. Este script crea todas las entidades del sistema (por ejemplo: pacientes, doctores, especialidades, citas) y sus relaciones mediante claves foráneas.
+Copiamos el script `tablas.sql` desde el **SQL Editor** de Supabase. Este script crea todas las entidades del sistema: pacientes, doctores, especialidades, citas y sus relaciones mediante claves foráneas.
 
 ### 3. Inserción de datos de prueba
 Con el script `insert.sql` insertamos registros reales en las tablas para disponer de información con la que trabajar durante las pruebas.
 
 ### 4. Verificación inicial
-Utilizamos `queries.sql` para ejecutar consultas `SELECT` y confirmar que las tablas se crearon correctamente y los datos se guardaron como se esperaba.
+Utilizamos `queries.sql` para ejecutar consultas `SELECTs` y `JOIN` para confirmar que las tablas se crearon correctamente y los datos se guardaron como se esperaba.
 
 ### 5. Diagrama de la base de datos
-Desde el panel de Supabase (**Database → Schema Visualizer**) obtuvimos una imagen del esquema físico de la base de datos `SUPABASE Diagrama.png`. También se elaboró un diagrama entidad-relación conceptual con draw.io `DER_ClinicaOftalmologa.drawio`.
+Desde el panel de Supabase **Database → Schema Visualizer** obtuvimos una imagen del esquema físico de la base de datos `SUPABASE Diagrama.png`. También se elaboró un diagrama entidad-relación conceptual con draw.io `DER_ClinicaOftalmologa.drawio`.
 
 ### 6. Obtención de credenciales para Postman
 - **URL base**: `https://mggpbibdbybhpwywuues.supabase.co/rest/v1/`
@@ -59,6 +71,8 @@ En Postman se creó un nuevo **Environment** con las siguientes variables:
 
 ### 9. Headers de autenticación
 En la pestaña **Headers** se incluyeron los siguientes campos:
-- `apikey`
-- `Authorization`
-- `Content-Type`
+- `apikey`: apikey
+- `Authorization`: bearer + apikey
+- `Content-Type`: application/json
+### 10. Video de demostracion:
+(https://youtube.com/watch?v=HrcAaBgeCdc)
