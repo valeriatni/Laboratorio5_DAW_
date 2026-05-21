@@ -48,7 +48,7 @@ Utilizamos `queries.sql` para ejecutar consultas `SELECT` y confirmar que las ta
 ### 5. Diagrama de la base de datos
 Desde el panel de Supabase (**Database → Schema Visualizer**) obtuvimos una imagen del esquema físico de la base de datos `SUPABASE Diagrama.png`. También se elaboró un diagrama entidad-relación conceptual con draw.io `DER_ClinicaOftalmologa.drawio`.
 
-![Diagrama Supabase](SUPABASE Diagrama.png)
+![Diagrama Supabase]("SUPABASE Diagrama.png")
 
 ### 6. Obtención de credenciales para Postman
 - **URL base**: `https://mggpbibdbybhpwywuues.supabase.co/rest/v1/`
